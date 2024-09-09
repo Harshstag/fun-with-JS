@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Set Intervel | Clear Intervel</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+
+    // const setIntervel = setInterval(sayDate, 2000, "Hi ");
+    // const clearIntervel = clearInterval(setIntervel);
+
+    let setIntervel;
+    document.querySelector("#start").addEventListener("click", function () {
+      setIntervel = setInterval(sayDate, 2000, "Hi ");
+      console.log("STARTED");
+    });
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(setIntervel);
+      console.log("STOPPED");
+    });
+  </script>
+</html>

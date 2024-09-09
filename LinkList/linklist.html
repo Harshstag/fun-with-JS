@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkList</title>
+    <script>
+      class LinkList {
+        constructor(data) {
+          this.head = {
+            value: data,
+            next: null,
+          };
+          this.size = 1;
+          this.tail = this.head;
+        }
+        appendNode(NodeData) {
+          let newNode = {
+            value: NodeData,
+            next: null,
+          };
+          this.tail.next = newNode;
+          this.tail = newNode;
+          this.size++;
+        }
+      }
+
+      let list = new LinkList(200);
+      list.appendNode(300);
+      list.appendNode(400);
+      console.warn(list);
+      console.log(LinkList);
+    </script>
+  </head>
+  <body>
+    <h1>Link List In JavaScript</h1>
+  </body>
+</html>

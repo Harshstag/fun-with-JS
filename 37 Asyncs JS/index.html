@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Async JS " setTimeout | clearTimeout</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // clearInterval
+    // clearTimeout
+    const changedText = function () {
+      document.querySelector("h1").innerHTML = "Set Timeout Executed";
+    };
+    const change = setTimeout(changedText, 3000);
+    const stopChange = document
+      .querySelector("#stop")
+      .addEventListener("click", function () {
+        clearTimeout(change);
+        console.log("Stopped");
+      });
+  </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="closur.js"></script>
+    <h1>Clouser / Lexcical Scope real-life example</h1>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    function clickHandler(color) {
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }
+
+    document
+      .getElementById("orange")
+      .addEventListener("click", clickHandler("orange"));
+
+    document
+      .getElementById("green")
+      .addEventListener("click", clickHandler("green"));
+  </script>
+</html>

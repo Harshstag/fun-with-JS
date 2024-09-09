@@ -1,0 +1,259 @@
+<script>
+  //   console.log("Hello World");
+  //   var a = 10;
+  //   var b = "My name is ";
+  //   c = a + b + "Harsh";
+  //   console.log(c);
+  //   a -= 5;
+
+  //   console.log(a);
+  //   var mystr = "Harsh Singh";
+  //   var len = mystr.length;
+  //   console.log(mystr[0]);
+  //   //   console.log("lenght of mystr is " + len);
+  //   //   how to get a last char
+  //   console.log("Lasst char is " + mystr[mystr.length - 1]);
+  //   //Create a  sentance func
+  //   function senten(noun, adj, verbe, adverg) {
+  //     var result = "";
+  //     result += "The " + adj + " " + verbe + " " + adverg + " to store";
+  //     return result;
+  //   }
+
+  //   var ans = "" + senten("dog", "big", "ran", "quickly");
+  //   console.log(senten("dog", "big", "ran", "quickly"));
+  //   console.log(ans);
+
+  // //  Arrays
+
+  //   var arr = ["Harsh", 20];
+  //   //   console.log(arr);
+  //   var myarr = [
+  //     ["Harsh", 101],
+  //     ["Rajesh", 102],
+  //     ["Nitesh", 103],
+  //   ];
+  //   console.log(myarr[0]);
+
+  //   var matrix = [
+  //     [1, 2, 3],
+  //     [4, 5, 6],
+  //     [7, 8, 9],
+  //   ];
+  //   console.log(matrix[2][0]);
+
+  //   var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  //   array.push(10);
+  //   console.log(array);
+
+  //   array.pop();
+  //   console.log(array);
+
+  //   array.shift();
+  //   console.log(array);
+
+  //   array.unshift(99);
+  //   console.log(array);
+
+  // //Adition
+  //   function add(a, b) {
+  //     console.log(a + b);
+  //   }
+  //   add(10, 20);
+
+  // var arr = [1, 2, 3, 4, 5];
+  // function queue(arr, num) {
+  //   arr.push(num);
+  //   return arr.shift();
+  // }
+
+  // console.log("Before :" + JSON.stringify(arr));
+  // queue(arr, 10);
+  // console.log("After :" + JSON.stringify(arr));
+
+  // //Golf Code
+
+  // var names = [
+  //   "Hole-in-one",
+  //   "Eagle",
+  //   "Birdie",
+  //   "Par",
+  //   "Bogey",
+  //   "Double Bogey ",
+  //   "Go Home",
+  // ];
+
+  // function golfScore(par, Strokes) {
+  //   if (Strokes == 1) {
+  //     return names[0];
+  //   } else if (Strokes <= par - 2) {
+  //     return names[1];
+  //   } else if (Strokes <= par - 1) {
+  //     return names[2];
+  //   } else if (Strokes == par) {
+  //     return names[3];
+  //   } else if (Strokes <= par + 1) {
+  //     return names[4];
+  //   } else if (Strokes <= par + 2) {
+  //     return names[5];
+  //   } else if (Strokes >= par + 3) {
+  //     return names[6];
+  //   }
+  //   return "Invalid";
+  // }
+
+  // console.log(golfScore(5, 4));
+
+  // //Card game
+
+  // var count = 0;
+
+  // function cc(card) {
+  //   switch (card) {
+  //     case 1:
+  //     case 2:
+  //     case 3:
+  //     case 4:
+  //     case 5:
+  //     case 6:
+  //       count++;
+  //     case 10:
+  //     case "J":
+  //     case "Q":
+  //     case "K":
+  //     case "A":
+  //       count--;
+  //   }
+
+  //   var beting = "Hold";
+
+  //   if (count > 0) {
+  //     beting = "Bet";
+  //   }
+
+  //   return count + " " + beting;
+  // }
+  // console.log(cc("K"));
+
+  // // Objects
+
+  // var emp = {
+  //   name: "Harsh",
+  //   age: 19,
+  //   positon: "HR",
+  //   role: ["Software", "HR", "HRS"],
+  // };
+  // emp.name = "Om";
+
+  // var detail = emp.name;
+  // console.log(detail);
+
+  // var emp = {
+  //   name: "Harsh",
+  //   age: 19,
+  //   positon: "HR",
+  //   role: ["Software", "HR", "HRS"],
+  // };
+  // function test(prop) {
+  //   if (emp.hasOwnProperty(prop)) {
+  //     return emp[prop];
+  //   } else {
+  //     return "not found";
+  //   }
+  // }
+
+  // console.log(test("name"));
+
+  // // Object inside array collection example
+
+  // var collection = {
+  //   101: {
+  //     name: "Arjit",
+  //     song: "Tu Hi hai",
+  //     year: 1990,
+  //     treack: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   102: {
+  //     name: "Sonu",
+  //     song: "le jaye",
+  //     year: 2010,
+  //     treack: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   103: {
+  //     name: "Diljeet",
+  //     song: "ek dil hai",
+  //     year: 2020,
+  //     treack: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   104: {
+  //     name: "Honey",
+  //     song: "koka",
+  //     year: 2002,
+  //     treack: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  // };
+
+  // var collectionCopy = JSON.parse(JSON.stringify(collection)); // Creates a copy of collection
+
+  // function updatecollection(id, prop, value) {
+  //   if (val === "") {
+  //     // If value is eqaul to null delete the obj
+  //     delete collection[id][prop];
+  //   } else if (prop == "treack") {
+  //     collection[id][prop] = collection[id][prop] || [];
+  //     collection[id][prop].push(value);
+  //   } else {
+  //     collection[id][prop] = value;
+  //   }
+  // }
+
+  // console.log(updatecollection(102, "treack", "test"));
+
+  // var contacts = [
+  //   {
+  //     name: "Arjit",
+  //     song: "Tu Hi hai",
+  //     number: 6666666666,
+  //     likes: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   {
+  //     name: "Sonu",
+  //     song: "le jaye",
+  //     number: 7777777777,
+  //     likes: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   {
+  //     name: "Diljeet",
+  //     song: "ek dil hai",
+  //     number: 8888888888,
+  //     likes: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  //   {
+  //     name: "Honey",
+  //     song: "koka",
+  //     number: 99999999999,
+  //     likes: ["Let me go", "xyz", "Hrs", "PQR"],
+  //   },
+  // ];
+
+  // function lookUpProfile(name, prop) {
+  //   for (i = 0; i < contacts.length; i++) {
+  //     if (contacts[i].name === name) {
+  //       return contacts[i][prop] || "No Such Value";
+  //     }
+  //   }
+  //   return "Invalid name";
+  // }
+
+  // data = lookUpProfile("Arjit", "number");
+  // console.log(data);
+
+  // const createPerson = (name, age, gender) => ({ name, age, gender });
+  // console.log(createPerson("Harsh", 20, "Male"));
+
+  const capital = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+  console.log(capital("harsh"));
+</script>
